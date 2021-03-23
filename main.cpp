@@ -3,6 +3,19 @@
 #include <iostream>
 using namespace std;
 
+void func1()
+{
+	int a = 0, b = 0;
+	cout << "두 개의 숫자를 입력하세요 : ";
+	cin >> a >> b;
+
+	int temp = a;
+	a = b;
+	b = temp;
+
+	cout << "a : " << a << ", " << "b : " << b << endl;
+}
+
 int main()
 {
     ios_base::sync_with_stdio(false);
@@ -28,7 +41,7 @@ int main()
 		cout << "Select Number>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>";
 		cin >> nInputManu;
 
-		if(nInputManu==1) { }
+		if(nInputManu==1) func1();
 		else if(nInputManu==2) { }
 		else if(nInputManu==3) { }
 		else if(nInputManu==4) { }

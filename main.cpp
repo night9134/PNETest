@@ -1,19 +1,33 @@
-#define _CRT_SECURE_NO_WARNINGS
+//#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <iostream>
 using namespace std;
 
+int func3()
+{
+	int num;
+	cout << '\n'
+		 << "insert number: ";
+	cin >> num;
+	
+	if(num % 2 == 0)
+		cout << num << " is even" << endl;
+	else
+		cout << num << " is odd" << endl;
+}
+
+
 int main()
 {
-    ios_base::sync_with_stdio(false);
-    cin.tie(0); cout.tie(0);
+    //ios_base::sync_with_stdio(false);
+    //cin.tie(0); cout.tie(0);
 
 	while (true)
 	{
 		int nInputManu = 0;
 
 		cout << "\n Select Method below \n";
-		cout << "1. Swap two number \n";
+		cout << "1. Swap two number \n"; //test
 		cout << "2. Quotient and Remainder \n";
 		cout << "3. Check whether number is Even or Odd \n";
 		cout << "4. Calculate Sum of Natural Numbers \n";
@@ -30,7 +44,10 @@ int main()
 
 		if(nInputManu==1) { }
 		else if(nInputManu==2) { }
-		else if(nInputManu==3) { }
+		else if(nInputManu==3) 
+        {
+            func3();
+        }
 		else if(nInputManu==4) { }
 		else if(nInputManu==5) { }
 		else if(nInputManu==6) { }

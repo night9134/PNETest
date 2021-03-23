@@ -3,6 +3,29 @@
 #include <iostream>
 using namespace std;
 
+//func8
+void func8()
+{
+	int nInput, flag=0;  
+  	cout << "Enter the Number to check Prime: ";  
+  	cin >> nInput;  
+  	
+  	for(int i = 2; i <= nInput/2; i++)  
+	{  
+		if(nInput % i == 0)  
+		{  
+			cout<<"Number is not Prime."<<endl;  
+			flag=1;  
+			break;  
+		}  
+	}  
+
+	if (flag==0)  
+		cout << "Number is Prime."<<endl;  
+}
+
+
+
 int main()
 {
     ios_base::sync_with_stdio(false);
@@ -13,7 +36,7 @@ int main()
 		int nInputManu = 0;
 
 		cout << "\n Select Method below \n";
-		cout << "1. Swap two number \n";
+		cout << "1. Swap two number \n"; //test
 		cout << "2. Quotient and Remainder \n";
 		cout << "3. Check whether number is Even or Odd \n";
 		cout << "4. Calculate Sum of Natural Numbers \n";

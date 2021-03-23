@@ -1,12 +1,37 @@
-#define _CRT_SECURE_NO_WARNINGS
-#include <stdio.h>
+//#define _CRT_SECURE_NO_WARNINGS
+//#include <stdio.h>
 #include <iostream>
+#include <algorithm>
 using namespace std;
 
+void func9(){
+	int from=0, to=0;
+	cout << "두 개의 숫자를 입력하세요 : ";
+	cin >> from >> to;
+
+	bool arr[to+1] = { false, };
+
+	arr[0] = true;
+	arr[1] = true;
+
+	for(int i=2; i<=to; i++){
+		if(arr[i]) continue;
+
+		for(int j=2*i; j<=to; j+=i){
+			arr[j] = true;
+		}
+	}
+
+	for(int i=from; i<=to; i++){
+		if(!arr[i]){
+			cout << i << " ";
+		}
+	} cout << "\n";
+}
 int main()
 {
-    ios_base::sync_with_stdio(false);
-    cin.tie(0); cout.tie(0);
+//    ios_base::sync_with_stdio(false);
+//    cin.tie(0); cout.tie(0);
 
 	while (true)
 	{
@@ -36,7 +61,7 @@ int main()
 		else if(nInputManu==6) { }
 		else if(nInputManu==7) { }
 		else if(nInputManu==8) { }
-		else if(nInputManu==9) { }
+		else if(nInputManu==9) func9();
 		else if(nInputManu==10) { }
 		else if(nInputManu==11) { }
 		else if(nInputManu==12) { }

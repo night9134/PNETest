@@ -40,7 +40,6 @@ int func6(int n,int *sum)
 	func6(n-1,sum);
 	return *sum;
 }
-
 void print(int *data,int len)
 {
   printf(" --정렬 후 순서--\n"); //정렬한 후 상태 출력.
@@ -49,11 +48,8 @@ void print(int *data,int len)
     printf("%d ", data[i]);
   }
   printf("\n");
-
-	
 }
-
-void quick(int *arr,int left, int right)
+void func7(int *arr,int left, int right)
 {
 	int L = left;
 	int R = right;
@@ -85,12 +81,11 @@ void quick(int *arr,int left, int right)
 		}
 	}
   if (left < R)
-    quick(arr, left, R);
+    func7(arr, left, R);
   if (L < right)
-    quick(arr, L, right);
+    func7(arr, L, right);
 
 }
-
 int main()
 {
 
@@ -124,7 +119,15 @@ int main()
 			int start =1;
 			printf("factorial %d\n",func6(10,&start)); 
 		}
-		else if(nInputManu==7) { }
+		else if(nInputManu==7) 
+		{ 
+			int len =10;
+			int data[10]={2,3,4,7,8,10,1,5,9,6};
+			func7(data,0,len-1);
+			
+			print(data,len);
+
+		}
 		else if(nInputManu==8) { }
 		else if(nInputManu==9) func9();
 		else if(nInputManu==10) { }

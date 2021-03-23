@@ -3,6 +3,32 @@
 #include <iostream>
 using namespace std;
 
+
+//func5 
+void func5()
+{
+	// 1. 4년에 한번은 윤년이라 한다. 
+	// 2. 100년에 한번은 윤년이라 하지 않는다. 
+	// 3. 400년에 한번은 윤년으로 한다. 
+
+    int nYear = 0;
+	cout << "5. Check Leap Year \n Input Year :";
+    cin>> nYear ;
+ 
+	if ((nYear % 400) == 0 || ((nYear % 100) != 0 && (nYear % 4) == 0))
+	{
+		cout << "Leap Year !! " <<endl;	//윤년
+    
+	}
+	else
+	{
+		cout << "Common Year :" <<endl;	//평년
+	}
+
+}
+
+
+
 int main()
 {
     ios_base::sync_with_stdio(false);
@@ -32,7 +58,7 @@ int main()
 		else if(nInputManu==2) { }
 		else if(nInputManu==3) { }
 		else if(nInputManu==4) { }
-		else if(nInputManu==5) { }
+		else if(nInputManu==5) {func5(); }
 		else if(nInputManu==6) { }
 		else if(nInputManu==7) { }
 		else if(nInputManu==8) { }
@@ -44,28 +70,4 @@ int main()
 	}
 
 	return 0;
-}
-
-
-//func5 
-void func5()
-{
-	// 1. 4년에 한번은 윤년이라 한다. 
-	// 2. 100년에 한번은 윤년이라 하지 않는다. 
-	// 3. 400년에 한번은 윤년으로 한다. 
-
-    int nYear = 0;
-	cout << "5. Check Leap Year \n Input Year :";
-    cin>> nYear ;
- 
-	if ((nYear % 400) == 0 || ((nYear % 100) != 0 && (nYear % 4) == 0))
-	{
-		cout << "Leap Year !! " <<endl;	//윤년
-    
-	}
-	else
-	{
-		cout << "Common Year :" <<endl;	//평년
-	}
-
 }

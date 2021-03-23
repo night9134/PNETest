@@ -94,33 +94,48 @@ int main()
 		int nInputManu = 0;
 
 		cout << "\n Select Method below \n";
-		cout << "1. Swap two number \n"; //test
-		cout << "2. Quotient and Remainder \n";
-		cout << "3. Check whether number is Even or Odd \n";
-		cout << "4. Calculate Sum of Natural Numbers \n";
-		cout << "5. Check Leap Year \n";
-		cout << "6. Factorial \n";
-		cout << "7. Find Largest element of an array \n";
-		cout << "8. Check Prime Number \n";
-		cout << "9. Display Prime Number between two intervals \n";
-		cout << "10. Calculate Power of a Number \n";
-		cout << "11. Find GCD \n";
-		cout << "12. Find LCM \n";
-		cout << "Select Number>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>";
+		
+		
+		
+		
+		
+		
+		
+		
 		cin >> nInputManu;
 
-		if(nInputManu==1) { }
-		else if(nInputManu==2) { }
-		else if(nInputManu==3) { }
-		else if(nInputManu==4) func4();
-		else if(nInputManu==5) { }
+		if(nInputManu==1) 
+		{ 
+			cout << "1. Swap two number \n"; //test
+
+		}
+		else if(nInputManu==2) 
+		{ 
+			cout << "2. Quotient and Remainder \n";
+		}
+		else if(nInputManu==3) 
+		{ 
+			cout << "3. Check whether number is Even or Odd \n";
+		}
+		else if(nInputManu==4) 
+		{
+			cout << "4. Calculate Sum of Natural Numbers \n";
+			func4();
+		}
+		
+		else if(nInputManu==5) 
+		{ 
+			cout << "5. Check Leap Year \n";
+		}
 		else if(nInputManu==6) 
 		{
+			cout << "6. Factorial \n";
 			int start =1;
 			printf("factorial %d\n",func6(10,&start)); 
 		}
 		else if(nInputManu==7) 
 		{ 
+			cout << "7. Find Largest element of an array \n";
 			int len =10;
 			int data[10]={2,3,4,7,8,10,1,5,9,6};
 			func7(data,0,len-1);
@@ -128,11 +143,30 @@ int main()
 			print(data,len);
 
 		}
-		else if(nInputManu==8) { }
-		else if(nInputManu==9) func9();
-		else if(nInputManu==10) { }
-		else if(nInputManu==11) { }
-		else if(nInputManu==12) { }
+		else if(nInputManu==8) 
+		{ 
+			cout << "8. Check Prime Number \n";
+		}
+		else if(nInputManu==9) 
+		{
+			cout << "9. Display Prime Number between two intervals \n";
+			func9();
+		}
+		else if(nInputManu==10)
+		{
+			cout << "10. Calculate Power of a Number \n";
+		}
+		else if(nInputManu==11)
+		{
+			cout << "11. Find GCD \n";
+
+		}
+		else if(nInputManu==12)
+		{
+			cout << "12. Find LCM \n";
+		}
+		
+		cout << "Select Number>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>";
 		else break;
 	}
 

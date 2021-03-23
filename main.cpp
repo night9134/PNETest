@@ -3,6 +3,11 @@
 #include <iostream>
 using namespace std;
 
+/*
+작성자: 박재성
+일자: 2021-03-23
+기능: 나눗셈, 몫/나머지 함수
+*/
 void func2() {
 	int dividend, divisor;
 	cout << "Input the Dividend: ";

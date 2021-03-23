@@ -33,6 +33,64 @@ void func4(){
 	cin >> temp;
 	cout << (temp*(temp+1))/2;
 }
+int func6(int n,int *sum)
+{
+	if(n==0) return 0;
+	*sum *=n;
+	func6(n-1,sum);
+	return *sum;
+}
+
+void print(int *data,int len)
+{
+  printf(" --정렬 후 순서--\n"); //정렬한 후 상태 출력.
+  for (int i = 0; i < len; i++) 
+  {
+    printf("%d ", data[i]);
+  }
+  printf("\n");
+
+	
+}
+
+void quick(int *arr,int left, int right)
+{
+	int L = left;
+	int R = right;
+	int temp;
+	int pnum = (L+R)/2;	
+	int pivot = arr[pnum];
+	printf("L : %d / pivot : %d / R : %d\n", L, pnum, R);
+
+	while(L<=R)
+	{
+		while(arr[L]<pivot)
+		{
+			L++;
+		}
+		
+		while(arr[R]>pivot)
+		{
+			R--;
+		}
+		if (L <= R) 
+		{ 
+			if (L != R) 
+			{
+				temp = arr[L];
+				arr[L] = arr[R];
+				arr[R] =temp;
+			}
+			L++,R--;
+		}
+	}
+  if (left < R)
+    quick(arr, left, R);
+  if (L < right)
+    quick(arr, L, right);
+
+}
+
 int main()
 {
 
@@ -61,7 +119,11 @@ int main()
 		else if(nInputManu==3) { }
 		else if(nInputManu==4) func4();
 		else if(nInputManu==5) { }
-		else if(nInputManu==6) { }
+		else if(nInputManu==6) 
+		{
+			int start =1;
+			printf("factorial %d\n",func6(10,&start)); 
+		}
 		else if(nInputManu==7) { }
 		else if(nInputManu==8) { }
 		else if(nInputManu==9) func9();

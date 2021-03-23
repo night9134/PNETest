@@ -1,12 +1,19 @@
-#define _CRT_SECURE_NO_WARNINGS
-#include <stdio.h>
+//#define _CRT_SECURE_NO_WARNINGS
+//#include <stdio.h>
 #include <iostream>
 using namespace std;
 
+void func4(){
+	int temp=0;
+
+	cout << "숫자를 입력하세요 : ";
+	cin >> temp;
+	cout << (temp*(temp+1))/2;
+}
 int main()
 {
-    ios_base::sync_with_stdio(false);
-    cin.tie(0); cout.tie(0);
+  //  ios_base::sync_with_stdio(false);
+    //cin.tie(0); cout.tie(0);
 
 	while (true)
 	{
@@ -31,7 +38,7 @@ int main()
 		if(nInputManu==1) { }
 		else if(nInputManu==2) { }
 		else if(nInputManu==3) { }
-		else if(nInputManu==4) { }
+		else if(nInputManu==4) func4();
 		else if(nInputManu==5) { }
 		else if(nInputManu==6) { }
 		else if(nInputManu==7) { }

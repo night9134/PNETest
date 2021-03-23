@@ -58,7 +58,7 @@ int main()
 		else if(nInputManu==5) { }
 		else if(nInputManu==6) { }
 		else if(nInputManu==7) { }
-		else if(nInputManu==8) { }
+		else if(nInputManu==8) {func8(); }
 		else if(nInputManu==9) { }
 		else if(nInputManu==10) { }
 		else if(nInputManu==11) { }

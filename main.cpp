@@ -24,7 +24,27 @@ void func5()
 	{
 		cout << "Common Year :" <<endl;	//평년
 	}
+}
 
+//func8
+void func8()
+{
+	int nInput, flag=0;  
+  	cout << "Enter the Number to check Prime: ";  
+  	cin >> nInput;  
+  	
+  	for(int i = 2; i <= nInput/2; i++)  
+	{  
+		if(nInput % i == 0)  
+		{  
+			cout<<"Number is not Prime."<<endl;  
+			flag=1;  
+			break;  
+		}  
+	}  
+
+	if (flag==0)  
+		cout << "Number is Prime."<<endl;  
 }
 
 
@@ -61,7 +81,7 @@ int main()
 		else if(nInputManu==5) {func5(); }
 		else if(nInputManu==6) { }
 		else if(nInputManu==7) { }
-		else if(nInputManu==8) { }
+		else if(nInputManu==8) {func8(); }
 		else if(nInputManu==9) { }
 		else if(nInputManu==10) { }
 		else if(nInputManu==11) { }

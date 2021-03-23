@@ -20,7 +20,19 @@ int func10()
 	for (int i = 0; i < n; i++)
 		r = r * x;
 	cout << x << "^" << n << " is " << r << endl;
+}
 	
+int func3()
+{
+	int num;
+	cout << '\n'
+		 << "insert number: ";
+	cin >> num;
+	
+	if(num % 2 == 0)
+		cout << num << " is even" << endl;
+	else
+		cout << num << " is odd" << endl;
 }
 
 
@@ -51,7 +63,10 @@ int main()
 
 		if(nInputManu==1) { }
 		else if(nInputManu==2) { }
-		else if(nInputManu==3) { }
+		else if(nInputManu==3) 
+        {
+            func3();
+        }
 		else if(nInputManu==4) { }
 		else if(nInputManu==5) { }
 		else if(nInputManu==6) { }

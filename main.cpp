@@ -1,6 +1,53 @@
+// #define _CRT_SECURE_NO_WARNINGS
+// #include <stdio.h>
 #include <iostream>
 #include <algorithm>
 using namespace std;
+
+/*
+작성자: 박재성
+일자: 2021-03-23
+기능: 나눗셈, 몫/나머지 함수
+*/
+void func2() {
+	int dividend, divisor;
+	cout << "Input the Dividend: ";
+	cin >> dividend;
+	cout << '\n';
+	cout << "Input the divisor: ";
+	cin >> divisor;
+	cout << '\n';
+	
+	int quotient = dividend / divisor;
+	int remainder = dividend % divisor;
+	cout << "Quotient: " << quotient << '\n';
+	cout << "Remainder: " << remainder << '\n';
+	return;
+}
+
+/*
+작성자: 박재성
+일자: 2021-03-23
+기능: GCD함수
+*/
+void func11() {
+	int A, B, C;
+	cout << "Input Two Numbers: " << '\n';
+	cout << "A: ";
+	cin >> A;
+	cout << '\n';
+	cout << "B: ";
+	cin >> B;
+	while(B)
+	{
+		C = A % B;
+		A = B;
+		B = C;
+	}
+	
+	cout << "GCD is " << A << '\n';
+	return;
+}
 
 void func9(){
 	int from=0, to=0;

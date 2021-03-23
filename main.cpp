@@ -1,12 +1,36 @@
-#define _CRT_SECURE_NO_WARNINGS
-#include <stdio.h>
+// #define _CRT_SECURE_NO_WARNINGS
+// #include <stdio.h>
 #include <iostream>
 using namespace std;
 
+/*
+작성자: 박재성
+일자: 2021-03-23
+기능: GCD함수
+*/
+void func11() {
+	int A, B, C;
+	cout << "Input Two Numbers: " << '\n';
+	cout << "A: ";
+	cin >> A;
+	cout << '\n';
+	cout << "B: ";
+	cin >> B;
+	while(B)
+	{
+		C = A % B;
+		A = B;
+		B = C;
+	}
+	
+	cout << "GCD is " << A << '\n';
+	return;
+}
+
 int main()
 {
-    ios_base::sync_with_stdio(false);
-    cin.tie(0); cout.tie(0);
+    // ios_base::sync_with_stdio(false);
+    // cin.tie(0); cout.tie(0);
 
 	while (true)
 	{
@@ -38,7 +62,7 @@ int main()
 		else if(nInputManu==8) { }
 		else if(nInputManu==9) { }
 		else if(nInputManu==10) { }
-		else if(nInputManu==11) { }
+		else if(nInputManu==11) { func11(); }
 		else if(nInputManu==12) { }
 		else break;
 	}

@@ -13,7 +13,7 @@ int main()
 		int nInputManu = 0;
 
 		cout << "\n Select Method below \n";
-		cout << "1. Swap two number \n";
+		cout << "1. Swap two number \n"; //test
 		cout << "2. Quotient and Remainder \n";
 		cout << "3. Check whether number is Even or Odd \n";
 		cout << "4. Calculate Sum of Natural Numbers \n";

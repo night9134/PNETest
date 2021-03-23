@@ -1,32 +1,25 @@
-#define _CRT_SECURE_NO_WARNINGS
-#include <stdio.h>
+// #define _CRT_SECURE_NO_WARNINGS
+// #include <stdio.h>
 #include <iostream>
 using namespace std;
 
-int func12()
+void func1()
 {
-    int a1 = 0, b1 = 0;
+	int a = 0, b = 0;
 	cout << "두 개의 숫자를 입력하세요 : ";
-	cin >> a1 >> b1;
+	cin >> a >> b;
 
-    int a2 = a1;
-    int b2 = b1;
+	int temp = a;
+	a = b;
+	b = temp;
 
-    while(b1 != 0) {
-        int c = a1 % b1;
-        a1 = b1;
-        b1 = c;
-    }
-    int gcd = a1;
-    int lcm = a2 * b2 / gcd;
-
-    cout << "LCM : " << lcm << endl;
+	cout << "a : " << a << ", " << "b : " << b << endl;
 }
 
 int main()
 {
-    ios_base::sync_with_stdio(false);
-    cin.tie(0); cout.tie(0);
+    // ios_base::sync_with_stdio(false);
+    // cin.tie(0); cout.tie(0);
 
 	while (true)
 	{
@@ -48,7 +41,7 @@ int main()
 		cout << "Select Number>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>";
 		cin >> nInputManu;
 
-		if(nInputManu==1) { }
+		if(nInputManu==1) func1();
 		else if(nInputManu==2) { }
 		else if(nInputManu==3) { }
 		else if(nInputManu==4) { }
@@ -59,7 +52,7 @@ int main()
 		else if(nInputManu==9) { }
 		else if(nInputManu==10) { }
 		else if(nInputManu==11) { }
-		else if(nInputManu==12) func12();
+		else if(nInputManu==12) { }
 		else break;
 	}
 

@@ -3,6 +3,33 @@
 #include <iostream>
 using namespace std;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 void func1()
 {
 	int a = 0, b = 0;

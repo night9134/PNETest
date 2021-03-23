@@ -1,19 +1,40 @@
-#define _CRT_SECURE_NO_WARNINGS
+//#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <iostream>
 using namespace std;
 
+
+int func10()
+{
+	int x;
+	int n;
+    int r = 1;
+	cout << '\n'
+		 << "insert x^n";
+	cout <<'\n'
+		 << "x: ";
+	cin >> x;
+	cout << "n: ";
+	cin >> n;
+
+	for (int i = 0; i < n; i++)
+		r = r * x;
+	cout << x << "^" << n << " is " << r << endl;
+	
+}
+
+
 int main()
 {
-    ios_base::sync_with_stdio(false);
-    cin.tie(0); cout.tie(0);
+    //ios_base::sync_with_stdio(false);
+    //cin.tie(0); cout.tie(0);
 
 	while (true)
 	{
 		int nInputManu = 0;
 
 		cout << "\n Select Method below \n";
-		cout << "1. Swap two number \n";
+		cout << "1. Swap two number \n"; //test
 		cout << "2. Quotient and Remainder \n";
 		cout << "3. Check whether number is Even or Odd \n";
 		cout << "4. Calculate Sum of Natural Numbers \n";
@@ -37,7 +58,10 @@ int main()
 		else if(nInputManu==7) { }
 		else if(nInputManu==8) { }
 		else if(nInputManu==9) { }
-		else if(nInputManu==10) { }
+		else if(nInputManu==10) 
+        { 
+            func10();
+        }
 		else if(nInputManu==11) { }
 		else if(nInputManu==12) { }
 		else break;
